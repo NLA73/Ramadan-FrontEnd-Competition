@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dzikir.css">
+    <title>Dzikr.io</title>
+</head>
+<body>
+    <div class="decor" aria-hidden="true">
+        <img src="/Assets/corner.png" style="width: 30%; max-width: 200px; position: fixed; top: 0; left: 0; z-index: 3;">
+        <img src="/Assets/corner.png" style="width: 30%; max-width: 200px; position: fixed; top: 0; right: 0; z-index: 3; transform: scaleX(-1);">
+        <img src="/Assets/corner.png" style="width: 30%; max-width: 200px; position: fixed; bottom: 0; left: 0; z-index: 3; transform: scaleY(-1);">
+        <img src="/Assets/corner.png" style="width: 30%; max-width: 200px; position: fixed; bottom: 0; right: 0; z-index: 3; transform: scale(-1, -1);">
+        
+        <audio id="bgMusic" src="/Assets/Beautiful Ramadan (No Copyright Music).mp3" loop></audio>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="/Homepage.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Menu  ▾</button>
+                <div class="dropdown-content"> 
+                     <a href="/Dzikr.io.html">Dzikir Manager</a>
+                 </div>
+            </div>
+         </nav>
+     </header>
+
+    <main class="main-container">
+        <div class="tasbih-frame">
+            <div id="bead-container">
+                </div>
+        </div>
+        <div class="counter-display">
+            <input type="number" id="target" placeholder="Input Target">
+            
+            <div class="count-wrapper">
+                <h1 class="label-count">Count:</h1>
+                <h1 id="count-display">0</h1>
+            </div>
+        
+        <button onclick="resetDzikir()">Reset</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</main>
+
+    <script src="system.js"></script>
+</body>
+</html>
